@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %} <!-- "Cross site request forgering": evita que alguem altere o formulário e entre com informações indesejáveis no sistema -->
+        {{ form.as_p }} <!-- .as_p coloca os dados em parágrafos -->
+        <button type="submit">Salvar</button>
+        {% if transacao %}
+            <a href="{% url 'url_delete' transacao.id %}">Remover</a>
+        {% endif %}
+    </form>
+</body>
+</html>
