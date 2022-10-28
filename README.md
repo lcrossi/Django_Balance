@@ -1,5 +1,5 @@
-# Django Balance :snake: :money_with_wings:
- #
+<h1 align="center">Django Balance :snake: :money_with_wings: </h1>
+# 
 Django Balance is a web application tool for quickly balance your expenses.
 
 ## :books: Requirements
