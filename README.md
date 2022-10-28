@@ -34,3 +34,11 @@ Django Balance is a web application tool for quickly balance your expenses.
   $ python manage.py migrate
 ```
 
+## :gear: Running server
+```bash
+  # Activate venv:
+  $ .venv/Scripts/activate
+  
+  # Run Django server:
+  $ python manage.py runserver
+```
